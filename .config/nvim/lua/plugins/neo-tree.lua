@@ -9,8 +9,14 @@ return {
     },
     config = function()
       require("neo-tree").setup({
-        close_if_last_window = true
+        close_if_last_window = true,
+        window = {
+          mappings = {
+            ["l"] = "open",
+            ["h"] = "close_node",
+          }
+        }
       })
-      vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal left<cr>')
+      vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal left<cr>', { noremap = true, silent = true})
     end
 }

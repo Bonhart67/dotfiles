@@ -7,12 +7,22 @@ return {
     tag = "0.1.5",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
+      local actions = require("telescope.actions")
       require("telescope").setup({
         extensions = {
           ["ui-select"] = {
             require("telescope.themes").get_dropdown({}),
           },
         },
+        defaults = {
+          mappings = {
+            i = {
+              ["<esc>"] = require('telescope.actions').close,
+              ["<C-j>"] = actions.move_selection_next,
+              ["<C-k>"] = actions.move_selection_previous,
+            },
+          },
+        }
       })
       local builtin = require("telescope.builtin")
       vim.keymap.set("n", "<leader>ff", builtin.find_files, {})

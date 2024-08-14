@@ -9,9 +9,15 @@ return {
         highlight = { enable = true },
         indent = { enable = true },
         ensure_installed = {
-          "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline"
+          "c",
+          "lua",
+          "vim",
+          "vimdoc",
+          "query",
+          "markdown",
+          "markdown_inline",
         },
       })
-    end
-  }
+    end,
+  },
 }

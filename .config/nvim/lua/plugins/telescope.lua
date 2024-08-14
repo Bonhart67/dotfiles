@@ -17,12 +17,12 @@ return {
         defaults = {
           mappings = {
             i = {
-              ["<esc>"] = require('telescope.actions').close,
+              ["<esc>"] = require("telescope.actions").close,
               ["<C-j>"] = actions.move_selection_next,
               ["<C-k>"] = actions.move_selection_previous,
             },
           },
-        }
+        },
       })
       local builtin = require("telescope.builtin")
       vim.keymap.set("n", "<leader>ff", builtin.find_files, {})

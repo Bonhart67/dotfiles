@@ -1,29 +1,29 @@
 return {
   {
-    "williamboman/mason.nvim",
+    'williamboman/mason.nvim',
     lazy = false,
     config = function()
-      require("mason").setup({ PATH = "prepend" })
+      require('mason').setup({ PATH = 'prepend' })
     end,
   },
   {
-    "williamboman/mason-lspconfig.nvim",
+    'williamboman/mason-lspconfig.nvim',
     lazy = false,
     opts = {
       auto_install = true,
-      ensure_installed = { "lua_ls" },
+      ensure_installed = { 'lua_ls' },
     },
   },
   {
-    "neovim/nvim-lspconfig",
+    'neovim/nvim-lspconfig',
     dependencies = {
-      "williamboman/mason.nvim",
+      'williamboman/mason.nvim',
     },
     lazy = false,
     config = function()
-      local capabilities = require("cmp_nvim_lsp").default_capabilities()
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-      local lspconfig = require("lspconfig")
+      local lspconfig = require('lspconfig')
       lspconfig.html.setup({
         capabilities = capabilities,
       })
@@ -31,15 +31,15 @@ return {
         capabilities = capabilities,
         settings = {
           Lua = {
-            diagnostics = { globals = { "vim" } },
+            diagnostics = { globals = { 'vim' } },
           },
         },
       })
 
-      vim.keymap.set("n", "H", vim.lsp.buf.hover, {})
-      vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-      vim.keymap.set("n", "<leader>a", vim.lsp.buf.code_action, {})
+      vim.keymap.set('n', 'H', vim.lsp.buf.hover, {})
+      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
+      vim.keymap.set('n', '<leader>gr', vim.lsp.buf.references, {})
+      vim.keymap.set('n', '<leader>a', vim.lsp.buf.code_action, {})
     end,
   },
 }

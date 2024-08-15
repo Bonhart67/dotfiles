@@ -1,9 +1,9 @@
 local o = vim.opt
 
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 
-o.clipboard = "unnamedplus"
-o.completeopt = { "menu", "menuone", "noselect" }
+o.clipboard = 'unnamedplus'
+o.completeopt = { 'menu', 'menuone', 'noselect' }
 
 o.tabstop = 2
 o.softtabstop = 2

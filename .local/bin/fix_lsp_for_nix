@@ -1,0 +1,7 @@
+#!/bin/sh
+
+LSP_BIN_PATH='/home/peter/.local/share/nvim/mason/packages/lua-language-server/libexec/bin'
+
+rm -f -- $LSP_BIN_PATH/lua-language-server
+
+ln -sf $(which lua-language-server) $LSP_BIN_PATH/lua-language-server

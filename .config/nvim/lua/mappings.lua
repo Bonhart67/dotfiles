@@ -12,6 +12,9 @@ nnoremap('<c-j>', ':wincmd j<CR>')
 nnoremap('<c-h>', ':wincmd h<CR>')
 nnoremap('<c-l>', ':wincmd l<CR>')
 
+nnoremap('<c-]>', ':bnext<CR>')
+nnoremap('<c-[>', ':bprevious<CR>')
+
 vnoremap('<', '<gv')
 vnoremap('>', '>gv')
 

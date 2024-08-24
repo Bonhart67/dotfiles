@@ -19,3 +19,5 @@ o.ignorecase = true
 o.smartcase = true
 
 o.swapfile = false
+
+o.scrolloff = 6

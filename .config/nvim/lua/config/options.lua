@@ -1,7 +1,5 @@
 local o = vim.opt
 
-vim.g.mapleader = ' '
-
 o.clipboard = 'unnamedplus'
 o.completeopt = { 'menu', 'menuone', 'noselect' }
 

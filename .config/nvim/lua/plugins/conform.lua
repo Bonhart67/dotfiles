@@ -25,7 +25,7 @@ return {
         css = { { 'prettierd', 'prettier', stop_after_first = true } },
         scss = { { 'prettierd', 'prettier', stop_after_first = true } },
         sh = { 'shellcheck' },
-        go = { 'gofmt', 'goimports' },
+        go = { 'goimports', 'gofmt' },
       },
     })
 
@@ -35,6 +35,6 @@ return {
         async = false,
         timeout_ms = 1000,
       })
-    end, { desc = 'Format file or range (in visual mode)' })
+    end)
   end,
 }

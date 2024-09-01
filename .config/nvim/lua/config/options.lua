@@ -1,7 +1,7 @@
 local o = vim.opt
 
-o.clipboard = 'unnamedplus'
-o.completeopt = { 'menu', 'menuone', 'noselect' }
+o.clipboard = "unnamedplus"
+o.completeopt = { "menu", "menuone", "noselect" }
 
 o.tabstop = 2
 o.softtabstop = 2

@@ -6,7 +6,7 @@ return {
 	},
 	config = function()
 		require("refactoring").setup()
-		vim.keymap.set({ "n", "x" }, "<leader>ri", ":Refactor inline_var<cr>")
+		vim.keymap.set({ "n", "x" }, "<leader>ri", ":Refactor inline_var<cr>dd")
 	end,
 }
 

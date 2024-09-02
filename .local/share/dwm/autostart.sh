@@ -1,5 +1,6 @@
 #!/bin/sh
 
+xset s off -dpms
 set_bg
 
 while true; do 

@@ -3,12 +3,7 @@ return {
 	branch = "v2.x",
 	dependencies = {
 		{ "neovim/nvim-lspconfig" },
-		{
-			"williamboman/mason.nvim",
-			build = function()
-				vim.cmd("MasonUpdate")
-			end,
-		},
+		{ "williamboman/mason.nvim" },
 		{ "williamboman/mason-lspconfig.nvim" },
 
 		{ "hrsh7th/nvim-cmp" },
@@ -77,7 +72,7 @@ return {
 				"pylsp",
 				"dockerls",
 				"bashls",
-				"marksman",
+				-- "marksman",
 				"gopls",
 			},
 			handlers = {

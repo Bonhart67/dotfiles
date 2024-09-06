@@ -26,6 +26,7 @@ return {
 				"bash",
 				"markdown",
 				"java",
+				"c_sharp",
 			},
 		},
 	},

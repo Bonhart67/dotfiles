@@ -31,6 +31,7 @@ return {
 			scss = { { "prettierd", "prettier", stop_after_first = true } },
 			sh = { "shellcheck" },
 			go = { "goimports", "gofmt" },
+			cs = { "csharpier" },
 		},
 	},
 }

@@ -24,7 +24,7 @@ return {
 			"leoluz/nvim-dap-go",
 			config = function()
 				require("dap-go").setup()
-				vim.keymap.set('n', '<leader>dt', ':lua require("dap-go").debug_test()<cr>', { silent = true })
+				vim.keymap.set("n", "<leader>dt", ':lua require("dap-go").debug_test()<cr>', { silent = true })
 			end,
 		},
 		{
@@ -47,8 +47,8 @@ return {
 	},
 	config = function()
 		vim.keymap.set("n", "<leader>db", ':lua require("dap").toggle_breakpoint()<cr>', { silent = true })
-		vim.keymap.set('n', '<leader>dc', ':lua require("dap").continue()<cr>', { silent = true })
-		vim.keymap.set('n', '<leader>ds', ':lua require("dap").step_over()<cr>', { silent = true })
-		vim.keymap.set('n', '<leader>di', ':lua require("dap").step_into()<cr>', { silent = true })
+		vim.keymap.set("n", "<leader>dc", ':lua require("dap").continue()<cr>', { silent = true })
+		vim.keymap.set("n", "<leader>ds", ':lua require("dap").step_over()<cr>', { silent = true })
+		vim.keymap.set("n", "<leader>di", ':lua require("dap").step_into()<cr>', { silent = true })
 	end,
 }

@@ -72,8 +72,8 @@ return {
 				"pylsp",
 				"dockerls",
 				"bashls",
-				-- "marksman",
 				"gopls",
+				"csharp_ls",
 			},
 			handlers = {
 				lsp.default_setup,

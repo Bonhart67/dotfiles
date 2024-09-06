@@ -19,6 +19,7 @@ return {
 				"gopls",
 				"delve",
 				"goimports",
+				"csharp_ls",
 			},
 		},
 	},

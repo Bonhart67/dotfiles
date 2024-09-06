@@ -9,4 +9,3 @@ return {
 		vim.keymap.set({ "n", "x" }, "<leader>ri", ":Refactor inline_var<cr>dd")
 	end,
 }
-

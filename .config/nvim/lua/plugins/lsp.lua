@@ -59,7 +59,6 @@ return {
 		require("mason").setup({})
 		require("mason-lspconfig").setup({
 			ensure_installed = {
-				"tsserver",
 				"eslint",
 				"rust_analyzer",
 				"kotlin_language_server",
@@ -80,6 +79,11 @@ return {
 				lua_ls = function()
 					local lua_opts = lsp.nvim_lua_ls()
 					require("lspconfig").lua_ls.setup(lua_opts)
+				end,
+				gopls = function()
+					require("go").setup({ lsp_cfg = false })
+					local cfg = require("go.lsp").config()
+					require("lspconfig").gopls.setup(cfg)
 				end,
 			},
 		})

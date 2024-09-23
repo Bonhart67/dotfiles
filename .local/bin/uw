@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -z "$(xrandr | grep eDP-1)" ]; then
+  xrandr --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-3 --mode 3440x1440 --rate 160
+else
+  xrandr --output eDP-1 --primary --mode 1920x1080 --pos 760x1440 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --mode 3440x1440 --pos 0x0 --rotate normal
+fi
+
+
+set_bg

@@ -1,7 +1,10 @@
 #!/bin/sh
 
-LSP_BIN_PATH='/home/peter/.local/share/nvim/mason/packages/lua-language-server/libexec/bin'
+LSP_BIN_PATH="$HOME/.local/share/nvim/mason/packages/lua-language-server/libexec/bin/lua-language-server"
+STYLUA_BIN_PATH="$HOME/.local/share/nvim/mason/packages/stylua/stylua"
 
-rm -f -- $LSP_BIN_PATH/lua-language-server
+rm -f -- $LSP_BIN_PATH
+rm -f -- $STYLUA_BIN_PATH
 
-ln -sf $(which lua-language-server) $LSP_BIN_PATH/lua-language-server
+ln -sf $(which lua-language-server) $LSP_BIN_PATH
+ln -sf $(which stylua) $STYLUA_BIN_PATH
